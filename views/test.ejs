@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>F1 Driver List</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/listings.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1 class="header">
+    <div class="back">
+      <a href="/">
+    </div>
+    <div class="logo">driver Listings Semantic Web</div>
+    <div class="search">Search</div>
+  </h1>
+
+  <div class="driver-wrapper">
+    <div class="driver-listings">
+      <% drivers.forEach(function(driver) { %>
+        <div class="driver-listing-driverd">
+          <h2><%- driver.name %></h2>
+          <h3><%- driver.team  %> </h3>
+          <p>Nationality    : <%- driver.country %></p>
+          <p>Date of Birth  : <%- driver.birthdate %></p>
+          <p>Age            : <%- driver.age %></p>
+          <p>Instagram      : <%- driver.instagram %></p>
+        </div>
+      <% }); %> 
+    </div>
+  </div>
+</body>
+</html>
