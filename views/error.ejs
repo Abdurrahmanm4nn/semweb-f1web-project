@@ -1,6 +1,18 @@
-extends layout
-
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error!</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/listings.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1 class="header">
+    <% message %>
+  </h1>
+  <h2 class="header">
+    <% error.status %>
+  </h2>
+  <pre><% error.stack %></pre>
+</body>
+</html>

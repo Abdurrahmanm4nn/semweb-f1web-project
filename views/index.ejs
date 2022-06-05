@@ -3,30 +3,38 @@
 <head>
   <title>F1 Driver List</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/listings.css">
+  <script type="text/javascript" src="javascripts/style.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1 class="header">
-    <div class="back">
-      <a href="/">
-    </div>
-    <div class="logo">driver Listings Semantic Web</div>
-    <div class="search">Search</div>
-  </h1>
+  <div class="header">
+    <div class="logo"><h1>F1 Driver Lists</h1></div>
+  </div>
 
-  <div class="driver-wrapper">
-    <div class="driver-listings">
-      <% drivers.forEach(function(driver) { %>
-        <div class="driver-listing-driverd">
-          <h2><%- driver.name %></h2>
-          <h3><%- driver.team  %> </h3>
-          <p>Nationality    : <%- driver.country %></p>
-          <p>Date of Birth  : <%- driver.birthdate %></p>
-          <p>Age            : <%- driver.age %></p>
-          <p>Instagram      : <%- driver.instagram %></p>
-        </div>
-      <% }); %> 
+  <h2>Welcome into F1 Driver Data Web Semantics!</h2>
+  <p>This website is created in order to search F1's current season's driver.</p>
+  <p>Here you can search the data of the driver based on their name, and their teams!</p>
+  <p>To start, you can use the navigations below!</p>
+
+  <div class="util">
+    <div class="dropdown">
+      <button onclick="showDropdownMenus()" class="dropbtn">View By Teams</button>
+      <div id="team-dropdown" class="dropdown-content">
+        <% teams.forEach(function(team) { %>
+          <% link = "/data/teams/" + team.name %>
+          <a href=<%- link %>><%- team.name %></a>
+        <% }); %>
+      </div>
+    </div>
+    <div class="view-all-button">
+      <a href="/data">View All Drivers</a>
+    </div>
+    <div class="search-container">
+      <form action="/data" method="get">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
   </div>
 </body>

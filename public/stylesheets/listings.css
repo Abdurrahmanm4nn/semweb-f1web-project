@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: #f00e06;
+    color: white;
+}
+
+.logo {
+    text-align: center;
+}
+
+.util {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: auto;
+}
+  
+.util a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.util a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.view-all-button {
+  margin-left: 40%;
+  width: 30%;
+  background-color: #f00e06;
+}
+
+.util a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.util .search-container {
+  float: right;
+  text-align: right;
+}
+
+.util input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.util .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.util .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .util .search-container {
+    float: none;
+  }
+  .util a, .util input[type=text], .util .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .util input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.driver-listings {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+}
+
+.driver-listings-data {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #f00e06;
+}
+
+.driver-listings-data a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Clear floats after the columns */
+.driver-listings:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.driver-photo {
+    height: 192px;
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    width: 192px;
+}
+
+ /* Responsive layout - when the screen is less than 600px wide, make the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .driver-listings-data {
+        width: 100%;
+    }
+} 
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: #f00e06;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 

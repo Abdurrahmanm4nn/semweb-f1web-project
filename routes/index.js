@@ -1,28 +1,31 @@
 var express = require('express');
 var router = express.Router();
 var d3 = require('d3-sparql');
+let sparqlEndpoint = 'http://localhost:3030/f1data/sparql';
+
+function getAllTeamsQuery(){
+    let query = `
+        PREFIX d: <http://semanticf1web.com/data#>
+        PREFIX dsc: <http://semanticf1web.com/description#>
+
+        SELECT ?teamlogo ?name ?engine
+        WHERE {
+            ?x  dsc:type "Team";
+                dsc:teamlogo ?teamlogo;
+                dsc:name  ?name;
+                dsc:engine  ?engine;
+        }`;
+
+    return query;
+}
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {   
-  let query = `
-  PREFIX d: <http://semanticf1web.com/data#>
-  PREFIX dsc: <http://semanticf1web.com/description#>
+    let teamsSparqlQuery  = getAllTeamsQuery();
 
-  SELECT ?team ?name ?country ?birthdate ?age ?instagram
-  WHERE {
-      ?x  dsc:team  ?team;
-          dsc:name  ?name;
-          dsc:country ?country;
-          dsc:birthdate  ?birthdate;
-          dsc:age  ?age;
-          dsc:instagram  ?instagram.
-  }`;
-  let sparqlEndpoint = 'http://localhost:3030/f1driverdata/sparql';
-
-  let result = await d3.sparql(sparqlEndpoint, query);
-  let data = JSON.stringify(result);
-  
-  return res.status(200).render('test', {drivers: result});
+    let teamResult = await d3.sparql(sparqlEndpoint, teamsSparqlQuery);
+    
+    return res.status(200).render('index', {teams: teamResult});
 });
 
 

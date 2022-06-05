@@ -1,0 +1,234 @@
+@prefix d: <http://semanticf1web.com/data#> .
+@prefix dsc: <http://semanticf1web.com/description#> .
+
+#teams
+d:teams1 dsc:type "Team";
+        dsc:name "Ferrari";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/logo.img.jpg/1521797474166.jpg";
+        dsc:engine "Ferrari".
+
+d:teams2 dsc:type "Team";
+        dsc:name "Red Bull Racing";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Red-Bull-Racing/_jcr_content/logo.img.jpg/1645620474276.jpg";
+        dsc:engine "Honda".
+
+d:teams3 dsc:type "Team";
+        dsc:name "Mercedes";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/logo.img.jpg/1582638425211.jpg";
+        dsc:engine "Mercedes".
+
+d:teams4 dsc:type "Team";
+        dsc:name "McLaren";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/logo.img.jpg/1644831223911.jpg";
+        dsc:engine "Mercedes".
+
+d:teams5 dsc:type "Team";
+        dsc:name "Alfa Romeo Sauber";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Alfa-Romeo-Racing/_jcr_content/logo.img.png/1643019381208.png";
+        dsc:engine "Ferrari".
+
+d:teams6 dsc:type "Team";
+        dsc:name "Alpine";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Alpine/_jcr_content/logo.img.jpg/1645620884650.jpg";
+        dsc:engine "Renault".
+
+d:teams7 dsc:type "Team";
+        dsc:name "Haas";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Haas-F1-Team/_jcr_content/logo.img.jpg/1646210673011.jpg";
+        dsc:engine "Ferrari".
+
+d:teams8 dsc:type "Team";
+        dsc:name "AlphaTauri";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/AlphaTauri/_jcr_content/logo.img.jpg/1582650557134.jpg";
+        dsc:engine "Honda".
+
+d:teams9 dsc:type "Team";
+        dsc:name "Aston Martin";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Aston-Martin/_jcr_content/logo.img.jpg/1645620644658.jpg";
+        dsc:engine "Mercedes".
+
+d:teams10 dsc:type "Team";
+        dsc:name "Williams";
+        dsc:teamlogo "https://www.formula1.com/content/fom-website/en/teams/Williams/_jcr_content/logo.img.jpg/1590743731407.jpg";
+        dsc:engine "Mercedes".
+
+# driver
+d:driver1 dsc:type "Driver";
+        dsc:name "Charles Leclerc";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.1920.medium.jpg/1646818893219.jpg";
+        dsc:team "Ferrari";
+        dsc:country "Monaco";
+        dsc:instagram "@charles_leclerc";
+        dsc:birthdate "16/10/1997";
+        dsc:age "24".
+
+d:driver2 dsc:type "Driver"; 
+        dsc:name "Carlos Sainz";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/carlos-sainz/_jcr_content/image.img.1920.medium.jpg/1646818866749.jpg";
+        dsc:team "Ferrari";
+        dsc:country "Spain";
+        dsc:instagram "@carlossainz55";
+        dsc:birthdate "01/09/1994";
+        dsc:age "27".
+
+d:driver3 dsc:type "Driver"; 
+        dsc:name "Max Verstappen";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.1920.medium.jpg/1646819045507.jpg";
+        dsc:team "Red Bull Racing";
+        dsc:country "Netherlands";
+        dsc:instagram "@maxverstappen1";
+        dsc:birthdate "30/09/1997";
+        dsc:age "24".
+
+d:driver4 dsc:type "Driver"; 
+        dsc:name "Sergio Perez";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.1920.medium.jpg/1646819228700.jpg";
+        dsc:team "Red Bull Racing";
+        dsc:country "Mexico";
+        dsc:instagram "@schecoperez";
+        dsc:birthdate "26/01/1990";
+        dsc:age "32".
+
+d:driver5 dsc:type "Driver"; 
+        dsc:name "George Russell";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/george-russell/_jcr_content/image.img.1920.medium.jpg/1646750994602.jpg";
+        dsc:team "Mercedes";
+        dsc:country "United Kingdom";
+        dsc:instagram "@georgerussell63";
+        dsc:birthdate "15/02/1998";
+        dsc:age "24".
+
+d:driver6 dsc:type "Driver"; 
+        dsc:name "Lewis Hamilton";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.1920.medium.jpg/1647334259839.jpg";
+        dsc:team "Mercedes";
+        dsc:country "United Kingdom";
+        dsc:instagram "@lewishamilton";
+        dsc:birthdate "07/01/1985";
+        dsc:age "37".
+
+d:driver7 dsc:type "Driver"; 
+        dsc:name "Lando Norris";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.1920.medium.jpg/1646819013197.jpg";
+        dsc:team "McLaren";
+        dsc:country "United Kingdom";
+        dsc:instagram "@landonorris";
+        dsc:birthdate "13/11/1999";
+        dsc:age "22".
+
+d:driver8 dsc:type "Driver"; 
+        dsc:name "Daniel Ricciardo";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.1920.medium.jpg/1646818924510.jpg";
+        dsc:team "McLaren";
+        dsc:country "Australia";
+        dsc:instagram "@danielricciardo";
+        dsc:birthdate "01/07/1989";
+        dsc:age "32".
+
+d:driver9 dsc:type "Driver"; 
+        dsc:name "Valtteri Bottas";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.1920.medium.jpg/1646819266274.jpg";
+        dsc:team "Alfa Romeo Sauber";
+        dsc:country "Finland";
+        dsc:instagram "@valtteribottas";
+        dsc:birthdate "28/08/1989";
+        dsc:age "32".
+
+d:driver10 dsc:type "Driver"; 
+        dsc:name "Zhou Guanyu";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/guanyu-zhou/_jcr_content/image.img.1920.medium.jpg/1646818979975.jpg";
+        dsc:team "Alfa Romeo Sauber";
+        dsc:country "China";
+        dsc:instagram "@zhouguanyu24";
+        dsc:birthdate "30/05/1999";
+        dsc:age "23".
+
+d:driver11 dsc:type "Driver"; 
+        dsc:name "Esteban Ocon";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/esteban-ocon/_jcr_content/image.img.1920.medium.jpg/1647334188097.jpg";
+        dsc:team "Alpine";
+        dsc:country "France";
+        dsc:instagram "@estebanocon";
+        dsc:birthdate "17/09/1996";
+        dsc:age "25".
+
+d:driver12 dsc:type "Driver"; 
+        dsc:name "Fernando Alonso";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/fernando-alonso/_jcr_content/image.img.1920.medium.jpg/1647334212592.jpg";
+        dsc:team "Alpine";
+        dsc:country "Spain";
+        dsc:instagram "@fernandoalo_oficial";
+        dsc:birthdate "29/07/1981";
+        dsc:age "40".
+
+d:driver13 dsc:type "Driver"; 
+        dsc:name "Kevin Magnussen";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.1920.medium.jpg/1647447969295.jpg";
+        dsc:team "Haas";
+        dsc:country "Denmark";
+        dsc:instagram "@kevinmagnussen";
+        dsc:birthdate "05/10/1992";
+        dsc:age "29".
+
+d:driver14 dsc:type "Driver"; 
+        dsc:name "Mick Schumacher";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/mick-schumacher/_jcr_content/image.img.1920.medium.jpg/1647334235171.jpg";
+        dsc:team "Haas";
+        dsc:country "Germany";
+        dsc:instagram "@mickschumacher";
+        dsc:birthdate "22/03/1999";
+        dsc:age "23".
+
+d:driver15 dsc:type "Driver"; 
+        dsc:name "Yuki Tsunoda";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/yuki-tsunoda/_jcr_content/image.img.1920.medium.jpg/1648134405786.jpg";
+        dsc:team "AlphaTauri";
+        dsc:country "Japan";
+        dsc:instagram "@yukitsunoda0511";
+        dsc:birthdate "11/05/2000";
+        dsc:age "22".
+
+d:driver16 dsc:type "Driver"; 
+        dsc:name "Pierre Gasly";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/pierre-gasly/_jcr_content/image.img.1920.medium.jpg/1646819179303.jpg";
+        dsc:team "AlphaTauri";
+        dsc:country "France";
+        dsc:instagram "@pierregasly";
+        dsc:birthdate "07/02/1996";
+        dsc:age "26".
+
+d:driver17 dsc:type "Driver"; 
+        dsc:name "Sebastian Vettel";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.1920.medium.jpg/1646818813887.jpg";
+        dsc:team "Aston Martin";
+        dsc:country "Germany";
+        dsc:instagram "@vettelofficial";
+        dsc:birthdate "03/07/1987";
+        dsc:age "34".
+
+d:driver18 dsc:type "Driver"; 
+        dsc:name "Lance Stroll";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/lance-stroll/_jcr_content/image.img.1920.medium.jpg/1648135171947.jpg";
+        dsc:team "Aston Martin";
+        dsc:country "Canada";
+        dsc:instagram "@lance_stroll";
+        dsc:birthdate "29/10/1998";
+        dsc:age "23".
+
+d:driver19 dsc:type "Driver"; 
+        dsc:name "Alexander Albon";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/_jcr_content/image.img.1920.medium.jpg/1646750995556.jpg";
+        dsc:team "Williams";
+        dsc:country "Thailand";
+        dsc:instagram "@alex_albon";
+        dsc:birthdate "23/03/1996";
+        dsc:age "26".
+
+d:driver20 dsc:type "Driver"; 
+        dsc:name "Nicholas Latifi";
+        dsc:photoURL "https://www.formula1.com/content/fom-website/en/drivers/nicholas-latifi/_jcr_content/image.img.1920.medium.jpg/1646819118069.jpg";
+        dsc:team "Williams";
+        dsc:country "Canada";
+        dsc:instagram "@nicholaslatifi";
+        dsc:birthdate "29/06/1995";
+        dsc:age "26".
